@@ -37,3 +37,4 @@ build/
 *.cmd
 *mvnw
 *test
+*.iml
