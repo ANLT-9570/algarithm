@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class test {
     public static void main(String[] args) {
-
+        test02();
     }
     public void test01(){
         ArrayList<String> arrayList = new ArrayList<>();
@@ -12,14 +12,14 @@ public class test {
         arrayList.clear();
         arrayList.isEmpty();
     }
-    public void test02(){
+    public static void test02(){
         sequenceList<String> list = new sequenceList<>();
         list.add("a");
         list.add("b");
         list.add("c");
         list.add("a");
         for(String s:list){
-
+            System.out.println(s);
         }
     }
 }

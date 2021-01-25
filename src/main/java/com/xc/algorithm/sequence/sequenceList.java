@@ -9,13 +9,16 @@ public class sequenceList<T> implements Iterable<T>{
     //记录元素个数
     private int N;
 
+    private static final Integer DEFAULT_CAPACITY = 10;
+
     //初始化
     public sequenceList(int capacity){
         this.ele = (T[]) new Object[capacity];
         this.N = 0;
     }
+
     public sequenceList(){
-        this(0);
+        this(DEFAULT_CAPACITY);
     }
 
     //将线性表值为空表
@@ -41,7 +44,7 @@ public class sequenceList<T> implements Iterable<T>{
     }
 
     public void add(T t){
-        ele[++N] = t;
+        ele[N++] = t;
     }
     //指定位置前面添加元素
     public void add(T t,int index){
